@@ -1,0 +1,467 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f6fb;
+  font-family: "Inter", sans-serif;
+  color: #1e2438;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px -25px rgba(16, 23, 42, 0.35);
+}
+
+/*  Header */
+.header {
+  position: relative;
+  background: linear-gradient(155deg, #10172a 0%, #1c2440 55%, #4f46e5 130%);
+  color: #fff;
+  text-align: center;
+  padding: 56px 30px 40px;
+  overflow: hidden;
+}
+
+.header-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.14) 1.2px,
+    transparent 1.2px
+  );
+  background-size: 18px 18px;
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.9),
+    transparent 75%
+  );
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), transparent 75%);
+  pointer-events: none;
+}
+
+.profile-pic {
+  position: relative;
+  width: 108px;
+  height: 108px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 12px 30px -8px rgba(0, 0, 0, 0.5);
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 0.2px;
+}
+
+.headline {
+  position: relative;
+  margin-top: 8px;
+  font-size: 15px;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.headline .bar {
+  color: #14b8a6;
+  margin: 0 4px;
+}
+
+.social-links {
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #fff;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.social-links a:hover {
+  background: #14b8a6;
+  border-color: #14b8a6;
+  transform: translateY(-2px);
+}
+
+.social-links svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* Section shell */
+.inner-container > section {
+  padding: 25px 34px;
+}
+
+.inner-container > section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #4f46e5;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #4f46e5;
+}
+
+/* Abou t*/
+.about-quote {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  color: #14b8a6;
+  margin-bottom: 14px;
+}
+
+.about-text {
+  color: #656d85;
+  font-size: 15px;
+  text-align: justify;
+}
+
+/* ==========================================================================
+   Personal details
+   ========================================================================== */
+.detail-list {
+  list-style: none;
+  display: grid;
+  gap: 16px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 14.5px;
+}
+
+.detail-icon {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #4f46e5;
+}
+
+.detail-item span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #1e2438;
+}
+
+.detail-item strong {
+  font-size: 11px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #656d85;
+  font-weight: 600;
+}
+
+.detail-item a {
+  color: #1e2438;
+  text-decoration: none;
+}
+
+.detail-item a:hover {
+  color: #4f46e5;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Timeline (education / experience)
+   ========================================================================== */
+.timeline {
+  list-style: none;
+  display: grid;
+  gap: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #14b8a6;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 16px;
+  bottom: -20px;
+  width: 1px;
+  background: #e6e8f2;
+}
+
+.timeline-item:last-child::after {
+  display: none;
+}
+
+.timeline-year {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  color: #4f46e5;
+  font-weight: 500;
+}
+
+.timeline-role {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.timeline-org {
+  font-size: 13.5px;
+  color: #656d85;
+}
+
+/* ==========================================================================
+   Skills
+   ========================================================================== */
+.skills-group-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #656d85;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 16px 0 10px;
+}
+
+.skills-group-label:first-of-type {
+  margin-top: 0;
+}
+
+.skill-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12.5px;
+  background: #f5f6fb;
+  border: 1px solid #e6e8f2;
+  color: #1c2440;
+  padding: 7px 13px;
+  border-radius: 999px;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.skill:hover {
+  border-color: #4f46e5;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Projects
+   ========================================================================== */
+.project-list {
+  list-style: none;
+  display: grid;
+  gap: 14px;
+}
+
+.project {
+  padding: 18px 20px;
+  border: 1px solid #e6e8f2;
+  border-radius: 10px;
+  background: #f5f6fb;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.project:hover {
+  border-color: #6366f1;
+  box-shadow: 0 10px 24px -14px rgba(79, 70, 229, 0.45);
+}
+
+.project-name {
+  display: block;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.project-desc {
+  font-size: 13.5px;
+  color: #656d85;
+  margin-bottom: 12px;
+}
+
+.project-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-tags li {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  background: #fff;
+  border: 1px solid #e6e8f2;
+  color: #4f46e5;
+  padding: 3px 9px;
+  border-radius: 6px;
+}
+
+/* ==========================================================================
+   Achievements
+   ========================================================================== */
+.achievement-list {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.achievement-list li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 14.5px;
+}
+
+.achievement-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  background: #14b8a6;
+  -webkit-mask: polygon(50% 0%, 0% 100%, 100% 100%);
+  mask: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* ==========================================================================
+   Hobbies
+   ========================================================================== */
+.hobby-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hobby {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: linear-gradient(
+    135deg,
+    rgba(79, 70, 229, 0.08),
+    rgba(20, 184, 166, 0.1)
+  );
+  color: #1c2440;
+  border: 1px solid #e6e8f2;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+  background: #10172a;
+  color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  padding: 20px;
+  font-size: 12.5px;
+  letter-spacing: 0.3px;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+
+  .container {
+    border-radius: 0;
+  }
+
+  .header {
+    padding: 44px 22px 32px;
+  }
+
+  .profile-pic {
+    width: 90px;
+    height: 90px;
+    font-size: 28px;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .inner-container > section {
+    padding: 24px 22px;
+  }
+}
