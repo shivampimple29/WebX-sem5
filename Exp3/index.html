@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body
+    class="h-screen bg-gradient-to-b from-orange-300 via-orange-400 to-orange-500 flex items-center justify-center p-6"
+  >
+    <div class="w-full max-w-5xl bg-white rounded-3xl shadow-2xl p-8">
+      <!-- Heading -->
+      <div class="text-center mb-8">
+        <h1 class="text-4xl font-bold text-gray-900">Registration Form</h1>
+
+        <p class="mt-2 text-gray-500">
+          Fill out the form carefully for registration
+        </p>
+      </div>
+
+      <form class="space-y-8" id="form">
+        <!-- Name -->
+        <div>
+          <h2 class="text-xl font-semibold mb-4">Student Name</h2>
+
+          <div class="grid grid-cols-2 gap-6">
+            <div>
+              <input
+                type="text"
+                placeholder="First Name"
+                id="fname"
+                class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-orange-500 focus:ring-4 focus:ring-orange-200 outline-none"
+              />
+            </div>
+
+            <div>
+              <input
+                type="text"
+                placeholder="Last Name"
+                id="lname"
+                class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-orange-500 focus:ring-4 focus:ring-orange-200 outline-none"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="grid grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xl font-semibold mb-3"> Gender </label>
+
+            <select
+              id="gender"
+              class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-orange-500 focus:ring-4 focus:ring-orange-200 outline-none"
+            >
+              <option value="" selected disabled>Please Select</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xl font-semibold mb-3">
+              Student E-mail
+            </label>
+
+            <input
+              id="email"
+              type="email"
+              placeholder="myname@student.sfit.ac.in"
+              class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-orange-500 focus:ring-4 focus:ring-orange-200 outline-none"
+            />
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="flex justify-center pt-2">
+          <button
+            type="submit"
+            class="bg-emerald-500 hover:bg-emerald-600 text-white px-16 py-3 rounded-lg font-medium shadow-lg transition hover:scale-105 hover:cursor-pointer"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
