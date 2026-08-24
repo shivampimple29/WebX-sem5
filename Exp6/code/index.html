@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Hello World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-app="myApp" ng-controller="MainController as vm">
+
+    <main class="page">
+
+        <section class="hero-card">
+            <span class="badge">AngularJS • Experiment 6</span>
+
+            <h1>{{ vm.title }}</h1>
+
+            <p class="hero-message">
+                {{ vm.message }}
+            </p>
+        </section>
+
+
+        <section class="content-grid">
+
+            <!-- Two-way data binding using ng-model -->
+            <article class="card">
+
+                <div class="card-heading">
+                    <span class="icon">↔</span>
+
+                    <div>
+                        <p class="eyebrow">ng-model</p>
+                        <h2>Interactive Data Binding</h2>
+                    </div>
+                </div>
+
+                <label for="nameInput">
+                    Enter your name
+                </label>
+
+                <input
+                    type="text"
+                    id="nameInput"
+                    ng-model="vm.userName"
+                    placeholder="Type your name..."
+                    autocomplete="off"
+                >
+
+                <!-- Dynamic display using ng-if -->
+                <div class="welcome-message" ng-if="vm.userName">
+
+                    <span class="welcome-icon">✓</span>
+
+                    <p>
+                        Hello <strong>{{ vm.userName }}</strong>.
+                        Welcome to the page.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- AngularJS expressions -->
+            <article class="card">
+
+                <div class="card-heading">
+                    <span class="icon">ƒx</span>
+
+                    <div>
+                        <p class="eyebrow">Expressions</p>
+                        <h2>Dynamic Values</h2>
+                    </div>
+                </div>
+
+
+                <div class="info-row">
+                    <span>Name</span>
+                    <strong>{{ vm.alias.name }}</strong>
+                </div>
+
+
+                <div class="info-row">
+                    <span>Villain</span>
+                    <strong>{{ vm.alias.villain }}</strong>
+                </div>
+
+
+                <div class="calculation-box">
+                    <span>Price after 10% interest</span>
+
+                    <strong>
+                        {{ vm.price * 1.10 }}
+                    </strong>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <footer class="footer">
+            <span>Built with AngularJS</span>
+
+            <span>
+                ng-controller • ng-model • Expressions
+            </span>
+        </footer>
+
+    </main>
+
+
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
