@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .card {
+            background: white;
+            display: inline-block;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1 { color: #198754; margin-top: 0; }
+        p { color: #6c757d; font-size: 18px; margin: 15px 0 25px 0; }
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #0d6efd;
+            border: 1px solid #0d6efd;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .btn:hover { background-color: #0d6efd; color: white; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Thank You, {{ name }}! 🎉</h1>
+        <p>We appreciate your feedback and will use it to improve our service.</p>
+        <a href="{{ url_for('feedback_form') }}" class="btn">Submit Another Response</a>
+    </div>
+</body>
+</html>
