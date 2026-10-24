@@ -1,9 +1,9 @@
 {
-  "repository": "shivampimple29/WebX",
+  "repository": "shivampimple29/WebX-sem5",
   "defaultBranch": "main",
-  "updatedAtUTC": "2026-10-24T06:59:50.357165+00:00",
-  "updatedAtIST": "2026-10-24 12:29:50 IST",
-  "trafficStatus": "success",
+  "updatedAtUTC": "2026-10-24T07:04:20.550478+00:00",
+  "updatedAtIST": "2026-10-24 12:34:20 IST",
+  "trafficStatus": "token_required",
   "trafficMetrics": {
     "availableDaysCount": 5,
     "isWindowComplete": true,

@@ -41,11 +41,11 @@ Practical solutions, lab experiments, and reference implementations for Semester
 If this repository helps your studies, practicals, or reference work, support the project:
 
 <p align="left">
-  <a href="https://github.com/shivampimple29/WebX/stargazers">
+  <a href="https://github.com/shivampimple29/WebX-sem5/stargazers">
     <img src=".github/analytics/assets/star.svg" alt="Star Repository" height="36" />
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/shivampimple29/WebX/fork">
+  <a href="https://github.com/shivampimple29/WebX-sem5/fork">
     <img src=".github/analytics/assets/fork.svg" alt="Fork Project" height="36" />
   </a>
   &nbsp;&nbsp;
@@ -53,12 +53,12 @@ If this repository helps your studies, practicals, or reference work, support th
     <img src=".github/analytics/assets/follow.svg" alt="Follow @shivampimple29" height="36" />
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/shivampimple29/WebX/issues">
+  <a href="https://github.com/shivampimple29/WebX-sem5/issues">
     <img src=".github/analytics/assets/doubt.svg" alt="Ask a Doubt" height="36" />
   </a>
 </p>
 
 ```bash
 # Clone this repository
-git clone https://github.com/shivampimple29/WebX.git
+git clone https://github.com/shivampimple29/WebX-sem5.git
 ```
