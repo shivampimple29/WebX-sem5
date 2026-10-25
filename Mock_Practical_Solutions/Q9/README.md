@@ -6,54 +6,64 @@
 ---
 
 ## Solution Overview
-This solution provides a standalone, robust Node.js script that connects to a local MongoDB instance or a remote MongoDB Atlas cluster using the **Mongoose ODM** (Object Data Modeling) library.
+This solution connects a Node.js runtime environment to a local MongoDB database instance (viewable via MongoDB Compass) using the **Mongoose ODM** (Object Data Modeling) library.
 
-### Key Features
-1. **Asynchronous Connection**: Uses `async/await` with `mongoose.connect(MONGO_URI)` to establish a clean, non-blocking connection.
-2. **Lifecycle Event Monitoring**:
-   - `mongoose.connection.on('connected', ...)`: Emitted when connection succeeds.
-   - `mongoose.connection.on('error', ...)`: Captures runtime connection errors.
-   - `mongoose.connection.on('disconnected', ...)`: Notifies when database connectivity is severed.
-3. **ODM Schema & Model**: Defines a sample `Student` schema and model to demonstrate ODM entity mapping.
-
----
-
-## How to Run
-
-### 1. Install Dependencies
-```bash
-# Navigate to the Q9 directory
-cd Mock_Practical_Solutions/Q9
-
-# Install mongoose
-npm install
-```
-
-### 2. Configure Connection URI (Optional)
-By default, the script connects to a local MongoDB instance:
+The script connects to the local MongoDB server at:
 ```
 mongodb://127.0.0.1:27017/student_db
 ```
-To connect to an Atlas cluster, specify the `MONGO_URI` environment variable:
-```bash
-# PowerShell
-$env:MONGO_URI="mongodb+srv://<username>:<password>@cluster0.mongodb.net/student_db"
-node index.js
+It defines a sample `Student` schema and model to demonstrate ODM integration and logs the connection confirmation to the console.
 
-# Bash
-MONGO_URI="mongodb+srv://<username>:<password>@cluster0.mongodb.net/student_db" node index.js
+---
+
+## Step-by-Step Setup & Execution
+
+### 1. Initialize the Node.js Project
+In the `Q9` directory, initialize a new Node.js project to generate `package.json`:
+```bash
+npm init -y
 ```
 
-### 3. Run the Script
+### 2. Install Mongoose
+Install the Mongoose ODM package. This will add `mongoose` to your dependencies and generate `package-lock.json`:
 ```bash
-node index.js
-# Or
+npm i mongoose
+```
+
+### 3. Configure the Start Script
+Open `package.json` and replace the default `"test"` script with the `"start"` script:
+```json
+"scripts": {
+  "start": "node index.js"
+}
+```
+This allows the project to be executed directly using `npm start`.
+
+### 4. Ensure Local MongoDB is Running
+Make sure your local MongoDB service is running (or opened in **MongoDB Compass**) on:
+```
+mongodb://127.0.0.1:27017
+```
+
+### 5. Run the Script
+Execute the script using:
+```bash
 npm start
+```
+*(Or directly via `node index.js`)*
+
+---
+
+## Expected Output
+```text
+Connecting to MongoDB at: mongodb://127.0.0.1:27017/student_db...
+-> Schema and Model registered successfully with Mongoose ODM.
+-> Demonstrated for: Shivam Pimple (shivampimple29@student.sfit.ac.in)
 ```
 
 ---
 
-### File Structure
-- `index.js`: Main connection script featuring event listeners and schema definition.
-- `package.json`: Project manifest declaring `mongoose` dependency.
-- `README.md`: Step-by-step setup and execution guide.
+## File Structure
+- `index.js`: Connection script using Mongoose to connect to localhost MongoDB.
+- `package.json`: Project manifest configured with the `"start"` script and `mongoose` dependency.
+- `README.md`: Step-by-step setup and execution instructions.
