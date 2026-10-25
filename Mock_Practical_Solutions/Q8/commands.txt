@@ -1,0 +1,33 @@
+// Connect to local MongoDB shell:
+mongosh
+
+// Or connect to MongoDB Atlas cluster:
+mongosh "mongodb+srv://<username>:<password>@cluster0.mongodb.net/student_db"
+
+// Switch / Create Database
+use student_db
+
+// 1. CREATE
+db.users.insertOne({ name: "Ashish Waghmare", email: "ashish@example.com", role: "DevOps Engineer", semester: 5, isActive: true })
+
+db.users.insertMany([{ name: "Shivam Pimple", email: "shivampimple29@student.sfit.ac.in", role: "Full-Stack Developer", semester: 5, skills: ["React", "Node.js", "MongoDB"], isActive: true }, { name: "Radha Ursekar", email: "radha@example.com", role: "Frontend Developer", semester: 5, skills: ["HTML", "CSS", "Angular"], isActive: true }])
+
+// 2. READ
+db.users.find()
+db.users.find().pretty()
+db.users.findOne({ name: "Shivam Pimple" })
+db.users.find({ isActive: true })
+db.users.find({}, { name: 1, email: 1, role: 1, _id: 0 })
+
+// 3. UPDATE
+db.users.updateOne({ name: "Shivam Pimple" }, { $set: { role: "Lead Full-Stack Developer", semester: 6 } })
+db.users.updateMany({ semester: 5 }, { $set: { department: "Information Technology" } })
+
+// 4. DELETE
+db.users.deleteOne({ name: "Ashish Waghmare" })
+
+// 5. VERIFY
+show dbs
+show collections
+db.users.countDocuments()
+db.users.find().pretty()
