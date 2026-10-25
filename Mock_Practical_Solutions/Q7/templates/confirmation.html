@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submission Confirmation - Shivam Pimple</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f0f2f5] text-gray-800 p-6 flex flex-col items-center justify-center min-h-screen">
+  <div class="w-full max-w-md bg-white border border-gray-200 rounded-lg p-6">
+    <header class="text-center mb-6">
+      <div class="w-12 h-12 mx-auto rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xl font-bold mb-3">
+        ✓
+      </div>
+      <h1 class="text-2xl font-bold text-gray-900">Submission Confirmed</h1>
+      <p class="text-sm text-gray-500 mt-1">POST Request captured and processed securely</p>
+    </header>
+
+    <!-- Dynamic Confirmation Details -->
+    <div class="p-4 bg-gray-50 border border-gray-200 rounded-md space-y-3 text-sm">
+      <div>
+        <span class="block text-xs font-semibold text-gray-500 uppercase tracking-wider">Name:</span>
+        <p class="font-medium text-gray-800">{{ name }}</p>
+      </div>
+
+      <div>
+        <span class="block text-xs font-semibold text-gray-500 uppercase tracking-wider">Email Address:</span>
+        <p class="font-medium text-gray-800">{{ email }}</p>
+      </div>
+
+      <div>
+        <span class="block text-xs font-semibold text-gray-500 uppercase tracking-wider">Submitted Message:</span>
+        <p class="font-medium text-gray-800">{{ message }}</p>
+      </div>
+    </div>
+
+    <div class="mt-4 text-center">
+      <a href="/" class="inline-block text-xs text-blue-600 hover:underline">
+        &larr; Submit Another Response
+      </a>
+    </div>
+
+    <footer class="mt-6 pt-4 border-t border-gray-200 text-center text-xs text-gray-500">
+      &copy; 2026 Shivam Pimple | Contact: shivampimple29@student.sfit.ac.in
+    </footer>
+  </div>
+</body>
+</html>
