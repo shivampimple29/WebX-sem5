@@ -1,0 +1,14 @@
+{
+  "name": "q9-mongoose-connection",
+  "version": "1.0.0",
+  "description": "Node.js connection to MongoDB using Mongoose ODM",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Shivam Pimple",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.0.0"
+  }
+}
