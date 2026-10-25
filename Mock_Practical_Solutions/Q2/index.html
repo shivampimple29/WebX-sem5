@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration Form - Shivam Pimple</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f0f2f5] text-gray-800 p-6 flex flex-col items-center justify-center min-h-screen">
+  <div class="w-full max-w-md bg-white border border-gray-200 rounded-lg p-6">
+    <header class="text-center mb-6">
+      <h1 class="text-2xl font-bold text-gray-900">User Registration</h1>
+      <p class="text-sm text-gray-500 mt-1">Fill out the details below to register</p>
+    </header>
+
+    <form action="#" method="POST" class="space-y-4">
+      <!-- Full Name -->
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          pattern="[A-Za-z ]{3,}"
+          title="Please enter at least 3 letters (letters and spaces only)"
+          placeholder="Shivam Pimple"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-600 text-sm"
+        >
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="shivampimple29@student.sfit.ac.in"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-600 text-sm"
+        >
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          minlength="8"
+          title="Password must be at least 8 characters long"
+          placeholder="Enter at least 8 characters"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-600 text-sm"
+        >
+      </div>
+
+      <!-- Phone Number -->
+      <div>
+        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          required
+          pattern="[0-9]{10}"
+          maxlength="10"
+          title="Please enter a valid 10-digit mobile number"
+          placeholder="9876543210"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-600 text-sm"
+        >
+      </div>
+
+      <!-- Submit Button -->
+      <button
+        type="submit"
+        class="w-full bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition-colors text-sm mt-2"
+      >
+        Register
+      </button>
+    </form>
+
+    <footer class="mt-6 pt-4 border-t border-gray-200 text-center text-xs text-gray-500">
+      &copy; 2026 Shivam Pimple | Contact: shivampimple29@student.sfit.ac.in
+    </footer>
+  </div>
+</body>
+</html>
