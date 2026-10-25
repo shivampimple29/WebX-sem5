@@ -1,0 +1,10 @@
+{
+  "name": "q6-fs-demonstration",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Shivam Pimple",
+  "license": "ISC"
+}
