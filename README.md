@@ -21,6 +21,11 @@ Practical solutions, lab experiments, and reference implementations for Semester
 <table align="center" border="0" style="border: none; border-collapse: collapse;">
   <tr>
     <td align="center" style="border: none; padding: 12px 20px;">
+      <a href="https://github.com/abhi220705">
+        <img src=".github/analytics/supporters/abhi220705.svg" width="220" alt="abhi220705" />
+      </a>
+    </td>
+    <td align="center" style="border: none; padding: 12px 20px;">
       <a href="https://github.com/AshishWaghmare12">
         <img src=".github/analytics/supporters/AshishWaghmare12.svg" width="220" alt="AshishWaghmare12" />
       </a>
