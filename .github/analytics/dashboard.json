@@ -1,23 +1,15 @@
 {
   "repository": "shivampimple29/WebX-sem5",
   "defaultBranch": "main",
-  "updatedAtUTC": "2026-11-22T10:13:31.316941+00:00",
-  "updatedAtIST": "2026-11-22 15:43:31 IST",
+  "updatedAtUTC": "2026-11-23T07:37:20.812380+00:00",
+  "updatedAtIST": "2026-11-23 13:07:20 IST",
   "trafficStatus": "success",
   "trafficMetrics": {
     "availableDaysCount": 5,
     "isWindowComplete": true,
-    "windowStartDate": "2026-11-16",
-    "windowEndDate": "2026-11-20",
+    "windowStartDate": "2026-11-17",
+    "windowEndDate": "2026-11-21",
     "last5DaysRecords": [
-      {
-        "date": "2026-11-16",
-        "clones": 3,
-        "uniqueCloners": 2,
-        "views": 0,
-        "uniqueVisitors": 0,
-        "status": "Recorded"
-      },
       {
         "date": "2026-11-17",
         "clones": 17,
@@ -49,6 +41,14 @@
         "views": 0,
         "uniqueVisitors": 0,
         "status": "Recorded"
+      },
+      {
+        "date": "2026-11-21",
+        "clones": 3,
+        "uniqueCloners": 2,
+        "views": 0,
+        "uniqueVisitors": 0,
+        "status": "Recorded"
       }
     ],
     "last5DaysTotalClones": 60,
@@ -58,24 +58,24 @@
     "last5DaysAvgUniqueClonersPerDay": 7.2,
     "last5DaysAvgUniqueVisitorsPerDay": 0.2,
     "previous5DaysDates": [
-      "2026-11-11",
       "2026-11-12",
       "2026-11-13",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-16"
     ],
-    "previous5DaysTotalClones": 57,
+    "previous5DaysTotalClones": 49,
     "previous5DaysTotalViews": 3,
-    "cloneDifference": 3,
+    "cloneDifference": 11,
     "viewDifference": -2,
-    "cloneGrowthPercent": 5.3,
+    "cloneGrowthPercent": 22.4,
     "viewGrowthPercent": -66.7,
-    "recordedCumulativeClones": 771,
+    "recordedCumulativeClones": 774,
     "recordedCumulativeViews": 446,
-    "recordedCumulativeUniqueCloners": 362,
+    "recordedCumulativeUniqueCloners": 364,
     "recordedCumulativeUniqueVisitors": 41,
     "collectionStartedAt": "2026-10-24T06:59:50.357165+00:00",
-    "lastSuccessfulUpdate": "2026-11-22T10:13:31.316941+00:00"
+    "lastSuccessfulUpdate": "2026-11-23T07:37:20.812380+00:00"
   },
   "forksCount": 1,
   "supporters": [
